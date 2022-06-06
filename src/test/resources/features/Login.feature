@@ -27,7 +27,7 @@ Feature: WebDriver University - Login Page
 
     Examples:
       | username  | password     | loginValidationMessage |
-      | webdriver | webdriver123 | validation succeeded   |
+      | webdriver | webdriver123 | validation succeeded   gi|
       | webdriver | webdriver1   | validation failed      |
       | joe_blogs | password1    | validation failed      |
 
