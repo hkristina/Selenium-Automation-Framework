@@ -24,12 +24,13 @@ Feature: WebDriver University - Login Page
     And I enter a password <password>
     And I click on the login button
     Then I should be presented with the following login validation message <loginValidationMessage>
-
     Examples:
       | username  | password     | loginValidationMessage |
       | webdriver | webdriver123 | validation succeeded   gi|
       | webdriver | webdriver1   | validation failed      |
       | joe_blogs | password1    | validation failed      |
+
+
 
 
 
