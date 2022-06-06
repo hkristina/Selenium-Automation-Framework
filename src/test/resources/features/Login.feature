@@ -18,7 +18,6 @@ Feature: WebDriver University - Login Page
     And I click on the login button
     Then I should be presented with the unsuccessful login message
 
-
   Scenario Outline: Validate - Successful & Unsuccessful Login
     When I enter a username <username>
     And I enter a password <password>
@@ -26,7 +25,7 @@ Feature: WebDriver University - Login Page
     Then I should be presented with the following login validation message <loginValidationMessage>
     Examples:
       | username  | password     | loginValidationMessage |
-      | webdriver | webdriver123 | validation succeeded   gi|
+      | webdriver | webdriver123 | validation succeeded   |
       | webdriver | webdriver1   | validation failed      |
       | joe_blogs | password1    | validation failed      |
 
