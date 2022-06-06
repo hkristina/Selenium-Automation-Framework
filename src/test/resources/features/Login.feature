@@ -31,13 +31,6 @@ Feature: WebDriver University - Login Page
 
 
 
-
-
-
-
-
-
-
 #  Scenario: Validate Successful Login
 #    When I enter a username "webdriver"
 #    And I enter a password webdriver123
