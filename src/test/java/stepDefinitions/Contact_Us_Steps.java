@@ -1,40 +1,25 @@
 package stepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
+//import io.cucumber.java.After;
+//import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.PageLoadStrategy;
-import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.PageLoadStrategy;
+//import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 
+
 public class Contact_Us_Steps {
-     private WebDriver driver;
 
-     @Before("@contact-us")
-     public void setup(){
-         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/java/drivers/chromedriver");
 
-         ChromeOptions chromeOptions = new ChromeOptions();
-         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL); //specific strategy for the page to load
 
-         driver = new ChromeDriver(chromeOptions);
-         driver.manage().window().maximize();
-         //Before our test gets executed we are opening chrome
-     }
-
-     @After("@contact-us")
-     public void tearDown(){
-         driver.quit();
-         //After the test is finished we are closing chrome browser
-     }
 
      public String generateRandomNumber(int length){
          return RandomStringUtils.randomNumeric(length);

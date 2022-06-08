@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
         features = {"classpath:features"}, //tell runner class where feature file is stored
         glue = {"stepDefinitions"},
-        tags = "@regression",
+        tags = "@login",
         monochrome = true,
         dryRun = false, //true will not execute step definitions
         plugin = { "pretty", "html:target/cucumber.html", "json:target/cucumber.json"}
